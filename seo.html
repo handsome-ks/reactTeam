@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>basicTimerSecond</title>
+    <style>
+        html, body, #wholeDiv{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        #topBar{
+            height: 5%;
+            width: 100%;
+            position: fixed;
+            background-color: gray;
+            top: 0;
+            z-index: 3;
+        }
+        .topBtn{
+            /* display: inline-block; */
+            height: 4%;
+            width: 10%;
+            top: 0.5%;
+            position: fixed;
+
+            text-align: center;
+            font-size: 150%;
+        }
+        #topAdd{
+            background-color: yellowgreen;
+            right: 15%;
+        }
+        #topSelect{
+            background-color: yellow;
+            right: 3%;
+        }
+
+
+        #middleArea{
+            top: 5%;
+            position: relative;
+            bottom: 8%;
+            width: 100%;
+            height: calc(100vh - 100px);
+            background-color: ivory;
+            z-index: 1;
+        }
+        #middleTop{
+            height: 30%;
+            width: 90%;
+            left: 5%;
+            right: 5%;
+            top: 3%;
+            position: absolute;
+            background-color: lightblue;
+        }
+        #middleTime{
+            height: 56%;
+            width: 80%;
+            left: 10%;
+            right: 10%;
+            top: 10%;
+            position: absolute;
+            background-color: lightsalmon;
+
+            text-align: center;
+            font-size: 300%;
+        }
+        #middleStart{
+            height: 20%;
+            width: 30%;
+            left: 35%;
+            right: 35%;
+            top: 70%;
+            position: absolute;
+            background-color: lightseagreen;
+
+            text-align: center;
+            font-size: 200%;
+        }
+
+        #middleBottom{
+            width: 90%;
+            left: 5%;
+            right: 5%;
+            top: 36%;
+            padding-bottom: 100px;
+            position: absolute;
+            background-color: lightpink;
+            height: auto;
+        }
+        .timerAdded{
+            height: 100px;
+            width: 42%;
+            top: 2%;
+            float: left;
+            margin: 4%;
+            /* position: absolute; */
+            background-color: linen;
+
+            text-align: center;
+        }
+        .timerAddedTime{
+            height: 40%;
+            width: 90%;
+            left: 5%;
+            right: 5%;
+            position: relative;
+            margin-top: 10%;
+            background-color: powderblue;
+            font-size: 32px;
+        }
+        .timerAddedName{
+            height: 25%;
+            width: 90%;
+            left: 5%;
+            right: 5%;
+            position: relative;
+            margin-top: 5%;
+            margin-bottom: 10%;
+            background-color: rosybrown;
+            font-size: 16px;
+        }
+
+
+        #underBar{
+            height: 60px;
+            width: 100%;
+            position: fixed;
+            display: flex;
+            background-color: gray;
+            bottom: 0;
+            z-index: 2;
+        }
+        .underBtn{
+            width: 20%;
+            height: 100%;
+
+            text-align: center;
+        }
+        .underIcon{
+            display: inline-block;
+            width: 60%;
+            height: 50%;
+            margin-top: 8%;
+            background-color: rosybrown;
+        }
+        .underText{
+            display: inline-block;
+            width: 60%;
+            height: 25%;
+            margin-top: 2%;
+            margin-bottom: 8%;
+            background-color: sandybrown;
+            font-size: medium;
+        }
+        #underFisrt{
+            background-color: coral;
+        }
+        #underSecond{
+            background-color: cadetblue;
+        }
+        #underThird{
+            background-color: darkgoldenrod;
+        }
+        #underFourth{
+            background-color: darkolivegreen;
+        }
+        #underFifth{
+            background-color: darkorchid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wholeDiv">
+
+        <div id="topBar">
+            <div class="topBtn" id="topAdd">추</div>
+            <div class="topBtn" id="topSelect">선</div>
+        </div>
+
+        <div id="middleArea">
+            <div id="middleTop">
+                <div id="middleTime">
+                    <div>시 분 초</div>
+                    <div>00:00:00</div>
+                </div>
+                <div id="middleStart">
+                    <div>시작</div>
+                </div>
+            </div>
+            <div id="middleBottom">
+                <div class="timerAdded">
+                    <div class="timerAddedTime">00:01:20</div>
+                    <div class="timerAddedName">알람이름1</div>
+                </div>
+                <div class="timerAdded">
+                    <div class="timerAddedTime">00:01:20</div>
+                    <div class="timerAddedName">알람이름1</div>
+                </div>
+                <div class="timerAdded">
+                    <div class="timerAddedTime">00:01:20</div>
+                    <div class="timerAddedName">알람이름1</div>
+                </div>
+                <div class="timerAdded">
+                    <div class="timerAddedTime">00:01:20</div>
+                    <div class="timerAddedName">알람이름1</div>
+                </div>
+                <div class="timerAdded">
+                    <div class="timerAddedTime">00:01:20</div>
+                    <div class="timerAddedName">알람이름1</div>
+                </div>
+                <div class="timerAdded">
+                    <div class="timerAddedTime">00:01:20</div>
+                    <div class="timerAddedName">알람이름1</div>
+                </div>
+                <div class="timerAdded">
+                    <div class="timerAddedTime">00:01:20</div>
+                    <div class="timerAddedName">알람이름1</div>
+                </div>
+                <div class="timerAdded">
+                    <div class="timerAddedTime">00:01:20</div>
+                    <div class="timerAddedName">알람이름1</div>
+                </div>
+                <div class="timerAdded">
+                    <div class="timerAddedTime">00:01:20</div>
+                    <div class="timerAddedName">알람이름1</div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="underBar">
+            <div class="underBtn" id="underFisrt">
+                <div class="underIcon"></div>
+                <div class="underText">메인</div>
+            </div>
+            <div class="underBtn" id="underSecond">
+                <div class="underIcon"></div>
+                <div class="underText">타이머</div>
+            </div>
+            <div class="underBtn" id="underThird">
+                <div class="underIcon"></div>
+                <div class="underText">글쓰기</div>
+            </div>
+            <div class="underBtn" id="underFourth">
+                <div class="underIcon"></div>
+                <div class="underText">보관함</div>
+            </div>
+            <div class="underBtn" id="underFifth">
+                <div class="underIcon"></div>
+                <div class="underText">내정보</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script>
+    const wholeDiv = $("#wholeDiv"); //전체 div
+
+    const topBar = $("#topBar"); //상단바
+    const topBtn = $(".topBtn"); //상단바 버튼들 클래스
+    const topAdd = $("#topAdd"); //왼쪽버튼 (추가)
+    const topSelect = $("#topSelect"); //오른쪽버튼 (선택)
+
+    const middleArea = $("#middleArea"); //내용 영역 전체
+    const middleTop = $("#middleTop"); //내용 영역 상단
+    const middleBottom = $("#middleBottom"); //내용 영역 하단
+
+    const underBar = $("#underBar"); //언더바
+    const underBtn = $(".underBtn"); //언더바 버튼들 클래스
+    const underFisrt = $("#underFisrt"); //언더바 버튼 첫번째
+    const underSecond = $("#underSecond"); //언더바 버튼 두번째
+    const underThird = $("#underThird"); //언더바 버튼 세번째
+    const underFourth = $("#underFourth"); //언더바 버튼 네번째
+    const underFifth = $("#underFifth"); //언더바 버튼 다섯번째
+</script>
+
+
+</html>
