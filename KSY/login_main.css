@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+@font-face {
+    font-weight: 300;
+    font-family: NanumSquareR;
+    src: url(font/NanumSquareR.eot);
+    src: url(font/NanumSquareRd41d.eot?#iefix) format("embedded-opentype"),
+      url(font/NanumSquareR.woff) format("woff"),
+      url(font/NanumSquareR.ttf) format("truetype")
+  }
+  
+/* reset.css */
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: NanumSquareR;
+    /* overflow-x: hidden; */
+}
+
+/* p {
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: 0.2px;
+} */
+
+h3 {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+}
+/* main{
+    min-height: calc(100vh - 60px);
+} */
+
+
+/* // reset.css */
+/*header*/
+
+.header-content{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    position:fixed;
+    font-size: 19px;
+    color:#ffffff;
+    text-align: center;
+    z-index: 1;
+}
+
+.headbox{
+    background-color: #F5A623;
+    flex: 1;
+    line-height: 70px;
+    /* border: 1px solid #ff6600; */
+}
+
+/* // header */
+
+/* main */
+
+.main{
+    width:100%;
+     /* 최소 높이를 헤더에 맞춘다. */
+     /* calc 는 +, -, *, / 모두 사용 가능. */
+    min-height: calc(100vh - 50px);
+    background:#f1f1f1;
+}
+/* .list{
+    padding-top: 70px;
+    width: 100%;
+    height: 10px;
+} */
+
+/* button{
+    float: right;
+    width:10%;
+    height:10px;
+    vertical-align: top;
+    color:blue;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+} */
+
+/* 검색창 */
+.search{
+    border: none;
+    padding-top:70px;
+    width:100%;
+    height:30px;
+    padding-left:16px;
+}
+.search > input{
+    background-color: #E5E5E5;
+    border: none;
+    width:50%;
+    margin: 0 auto;
+    height: 30px;
+    font-size: 14px;
+} 
+/* // 검색창 */
+
+/* 내부 컨텐츠 */
+.contents{
+    background-color: #E5E5E5;
+    height: 100%;
+    margin-top: 60px;
+    padding: 0 16px 100px 16px;
+}
+
+.contents > .box{
+    border: 1px solid #F5A623;
+    background:white;
+    width: 100%;
+    height: 120px;
+    margin-top:16px;
+    position: relative;
+    border-radius: 10px;
+}
+.img-box{
+    width: 85px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.contents-img{
+    position: relative;
+    float: right;
+    width: 10%;
+}
+.contents-img > .img{
+    width: 20px;
+}
+
+.text{
+    margin: 10px 0 0 10px;
+}
+.text-tit{
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.text-subtit{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.text-tag{
+    font-size: 15px;
+    color: #909192;
+}
+
+.timer-status{
+    width:60px;
+    height:20px;
+    position: relative;
+    top:40px;
+    left: 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+/*
+.timer-set{
+    position:absolute;
+    left:0;
+    top:0;
+}
+/* 상황별로 나타나는 값이 다르기 때문에 같은 선상에 클래스를 두고 변할 수 있도록 숨겨준다. 
+.timer-reset{
+    position:absolute;
+    left:0;
+    top:0;
+}
+/* display 상태 변경 class 
+.block{
+    display: block;
+}
+.none{
+    display: none;
+}
+/* // display 상태 변경 class 
+*/
+.timer-title{
+    position: absolute;
+    right:40px;
+    top:16px;
+}
+.timer-num{
+    position: absolute;
+    right:40px;
+    top: 40px;
+}
+.timer-num > p{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 300;
+}
+/* // 내부 컨텐츠 */
+
+
+
+
+
+/* .main{
+    height:100vh;
+    background:pink;
+}
+.search{
+    width: 300px;
+    height: 40px;
+}
+/* .contents{
+    width: 100%;
+    height: 100%;
+}
+.box{
+    border: 1px solid darkgreen;
+
+    /* position: absolute;
+    width: 70%;
+    height: 40px; */
+
+/* footer */
+.footer{
+    display: flex;
+    /* border: 1px solid rebeccapurple; */
+    width: 100%;
+    height: 65px;
+    position:fixed;
+    font-size:1em;
+    background-color:#FFFFFF;
+    bottom: 0;  
+}
+.footbox{
+    text-align: center;
+    flex: 1;
+}
+
+.icon{
+    padding-top: 10px;
+    width: 100%;
+    height: 24px;
+}
+.icon > img{
+   
+    width: 24px;
+}
+.icon-text{
+    line-height: 50px;
+    margin-top: 2px;
+}
+/*// footer*/

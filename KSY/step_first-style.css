@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@font-face {
+    font-weight: 300;
+    font-family: NanumSquareR;
+    src: url(font/NanumSquareR.eot);
+    src: url(font/NanumSquareRd41d.eot?#iefix) format("embedded-opentype"),
+      url(font/NanumSquareR.woff) format("woff"),
+      url(font/NanumSquareR.ttf) format("truetype")
+  }
+  
+/* reset.css */
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: NanumSquareR;
+}
+
+p {
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: 0.2px;
+}
+
+h3 {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+}
+/* main{
+    min-height: calc(100vh - 60px);
+} */
+
+
+/* // reset.css */
+
+/*header*/
+.headerbox{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 10;
+}
+
+.headbar{
+    height: 100%;
+    background-color: #ffffff;
+    position: relative;
+    padding-top: 15px;
+}
+.img-pointer{
+    position: absolute;
+    padding-top: 3px;
+    left: 5%;
+}
+.headbar > h2{
+    text-align: center;
+    font-size: 18px;   
+    top: 15px;
+}
+
+
+/* // header */
+
+/* main */
+
+main{
+    width:100%;
+     /* 최소 높이를 헤더에 맞춘다. */
+     /* calc 는 +, -, *, / 모두 사용 가능. */
+    min-height: calc(100vh - 50px);
+}
+.contents{
+    background-color: #E5E5E5;
+        min-height: 100vh;
+    /* margin-top: 60px; */
+}
+
+.img-box{
+    width: 100%;
+    padding: 50px 0 0 0;
+    height: 100%;
+}
+.img-yoga{
+    max-width: 100%;
+    max-height: 90%;
+}
+.img-yoga2{
+    max-width: 100%;
+    height: 400px;
+}
+
+.txt-box{
+    text-align:center;
+    padding-top: 10%;
+}
+.txt-box > h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10%;
+}
+.txt-box > p{
+    font-size: 18px;
+    margin-bottom: 10%;
+}
+.txt-box > h4{
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.btn-box{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+.btn-box > .box{
+    flex: 1;
+}
+button{
+    flex: 1;
+    height:70px;
+    width: 70px;
+    background-color:#c4c4c4;
+    border-radius: 50%;
+    border: none;
+    font-size: 15px;
+    font-weight: 900;
+}
+/* .end{
+
+} */
+/* 아이폰 5S 기준 반응형 css */
+@media (max-width: 320px){
+    
+    button{
+        font-size: 12px;
+    }
+
+}
+
