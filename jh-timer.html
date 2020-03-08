@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <link rel="stylesheet" href="./timer_style.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .wrap {
+            width: 100%;
+
+        }
+
+        .top {
+            background: lightgray;
+            height: 50px;
+            line-height: 50px;
+            width: 100%;
+            position: fixed;
+            z-index: 10;
+        }
+
+        .top-timer {
+            font-size: 25px;
+            text-align: center;
+
+        }
+
+        .top-plus {
+            position: absolute;
+            top: 0px;
+            left: 80%;
+        }
+
+        /* .top-select {
+            position: absolute;
+            top: 0;
+            left: 90%
+        } */
+
+        .mid {
+            position: relative;
+            top: 55px;
+        }
+
+        .mid-text {
+            margin: 0 10px 0 10px;
+        }
+
+        .mid-time {
+            vertical-align: middle;
+            font-size: 40px;
+            line-height: 70px;
+            margin-left: 30px;
+        }
+
+        /* .mid-bar {
+            float: right;
+            margin-top: -12%;
+            position: relative;
+            right: 20%;
+        } */
+
+        .alarmbox {
+            border: 1px solid black;
+            margin: 20px;
+            height: 70px;
+        }
+
+        .alarm {
+            /* float: right; */
+            margin-right: 15px;
+            position: absolute;
+            left: 70%;
+        }
+
+        .bot {
+            display: flex;
+            background: lightgray;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            z-index: 10;
+        }
+
+        .bot-container {
+            background-color: lightgray;
+            text-align: center;
+            flex: 1;
+        }
+
+        .bot-box {
+            width: 40px;
+            height: 40px;
+            border: 1px solid red;
+            margin: 10px auto;
+        }
+        
+        .bot-text{
+            /* margin: 5px 0 0 30px; */
+        }
+
+        .emtbox {
+            border: 1px solid black;
+            width: 70%;
+            margin: 20px;
+            height: 70px;
+        }
+
+        .contents{
+            padding-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <section class="top">
+            <div class="top-timer">타이머</div>
+            <div class="top-plus">추가</div>
+            <div class="top-select">선택</div>
+        </section>
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        <section class="mid swiper-container">
+            <div class="swiper-wrapper">
+                <div class="contents swiper-slide">
+                    <div class=alarmbox>
+                        <div class=alarm>
+                            <span>알람1</span>
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <span class="mid-text">시작</span>
+                            <span class="mid-time">00:05:00</span>
+                            <!-- <span class=mid-bar>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </span> -->
+                        </div>
+                    </div>
+
+                    <div class=alarmbox>
+                        <div class=alarm>
+                            <span>알람2</span>
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <span class="mid-text">시작</span>
+                            <span class="mid-time">00:05:00</span>
+                            <!-- <span class=mid-bar>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </span> -->
+                        </div>
+                    </div>
+
+                    <div class=alarmbox>
+                        <div class=alarm>
+                            <span>알람3</span>
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <span class="mid-text">시작</span>
+                            <span class="mid-time">00:05:00</span>
+                            <!-- <span class=mid-bar>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </span> -->
+                        </div>
+                    </div>
+
+                    <div class=alarmbox>
+                        <div class=alarm>
+                            <span>알람4</span>
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <span class="mid-text">시작</span>
+                            <span class="mid-time">00:05:00</span>
+                            <!-- <span class=mid-bar>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </span> -->
+                        </div>
+                    </div>
+
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+                    <div class="emtbox"></div>
+
+                </div>
+            </div>
+        </section>
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        <section class="bot">
+            <div class="bot-container">
+                <div class="bot-box"></div>
+                <div class="bot-text">메인</div>
+            </div>
+
+            <div class="bot-container">
+                <div class="bot-box"></div>
+                <div class="bot-text">타이머</div>
+            </div>
+
+            <div class="bot-container">
+                <div class="bot-box"></div>
+                <div class="bot-text">글쓰기</div>
+            </div>
+
+            <div class="bot-container">
+                <div class="bot-box"></div>
+                <div class="bot-text">보관함</div>
+            </div>
+
+            <div class="bot-container">
+                <div class="bot-box"></div>
+                <div class="bot-text">내정보</div>
+            </div>
+
+        </section>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script>
+    const titleArr = ["전체", "요리", "운동"];
+
+    let pageCount = -1;
+
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.header-content',
+            clickable: true,
+            renderBullet: function (index, className) {
+                pageCount++;
+                return '<div class="headbox ' + className + '">' + titleArr[pageCount] + '</div>';
+                //'<span class="' + className + '">' + (index + 1) + '</span>';
+            },
+        },
+    });
+</script>
+
+
+
+
+
+</html>
