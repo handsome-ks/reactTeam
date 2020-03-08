@@ -10,8 +10,12 @@
             width: 100%;
             margin: 0;
             position: relative;
-            
+            color: #909090;
         }
+        a {
+            text-decoration: none;
+        }
+
         .logoArea{
             width: 70%;
             height: 30%;
@@ -21,6 +25,13 @@
             position: absolute;
             text-align: center;
         }
+        .logo{
+            width: 100%;
+            height: 100%;
+            background-color: lemonchiffon;
+            border: 1px solid gray;
+        }
+        
         .inputArea{ /*아이디,비번,로그인버튼 영역*/
             width: 80%;
             height: 25%;
@@ -32,6 +43,9 @@
         .idInput, .pwInput, .loginBtn{/*아이디,비번,로그인버튼*/
             margin-bottom: 3%;
         }
+        .loginBtn{
+            background-color: #FFF7EB;
+        }
 
         .question{ /*아이디비번 찾기 질문*/
             position: absolute;
@@ -40,37 +54,30 @@
             width: 100%;
             height: 5%;
         }
-        .logo{
-            width: 100%;
-            height: 100%;
-            /* background-color: skyblue; */
-            border: 1px solid black;
-        }
+        
         input{
             outline-style: none;
             text-decoration: none;
             -webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */ 
             -moz-appearance: none;
             appearance: none;
-            border-radius: 0px;
+            border-radius: 3px;
             padding: 5% 0% 5% 0%;
             width: 100%;
             height: 30%;
             font-size: 16px;
-        }
-        input[type=text],input[type=password]{
             border: 1px solid gray;
-            padding-left: 3%;
+            text-align: center;
         }
-        input[type=button]{
-            border: 1px solid gray;
-        }
-        .join{
+        .join{ /*가입하기 텍스트 영역*/
             width: 100%;
             height: 10%;
             bottom: 0;
             position: fixed;
             text-align: center;
+            background-color: #fafafa;
+            line-height: 500%;
+            border-top: 1px solid #d5d5d5;
         }
     </style>
 </head>
@@ -81,14 +88,14 @@
         <div class="logo"></div>
     </div>
     <div class="inputArea">
-        <div class="idInput">
-            <input type="text" placeholder="아이디를 입력해주세요">
+        <div>
+            <input class="idInput" type="text" placeholder="아이디를 입력해주세요">
         </div>
-        <div class="pwInput">
-            <input type="password" placeholder="비밀번호를 입력해주세요">
+        <div>
+            <input class="pwInput" type="password" placeholder="비밀번호를 입력해주세요">
         </div>
-        <div class="loginBtn">
-            <input type="button" value="로그인">
+        <div>
+            <input class="loginBtn" type="button" value="로그인">
         </div>
     </div>
     <div class="question">
