@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+
+    <link rel="stylesheet" href="path/to/sweetdropdown/dist/min/jquery.sweet-dropdown.min.css" />
+    <link rel="stylesheet" href="./main_detail_page_style.css">
+    <title>Main Detail Page Training</title>
+</head>
+
+<body>
+    <div class="topBar"> <!--상단-->
+        <div class="topBack">
+            <img src="./img/keyboard_backspace-24px.svg" alt="back">
+        </div>
+        <div class="topText">상세정보</div>
+    </div>
+
+    <div class="repImg"> <!--대표이미지-->
+        <img class="topImg" src="./img/training.jpg" alt="training_img">
+    </div>
+
+    <div class="titleBar"> <!--게시글 제목 부분-->
+        <div class="titleText">운동을 요래요래 하세요</div>
+        <div class="favoriteIcon"> <!--좋아요-->
+            <img src="./img/favorite_border-24px.svg" alt="favorite">
+        </div>
+        <div class="bookmarkIcon"> <!--보관함에 넣기-->
+            <img src="./img/bookmark_border-24px.svg" alt="bookmark">
+        </div>
+        <button class="moreIcon" data-dropdown="#dropdown-standard"> <!--더보기-->
+            <img src="./img/more_vert-24px.svg" alt="more">
+        </button>
+        <div class="dropdown-menu dropdown-anchor-top-right dropdown-has-anchor" id="dropdown-standard">
+            <ul>
+                <li><a href="#">수정하기</a></li>
+                <li><a href="#">공유하기</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="middleArea"> <!--중간부분(스텝&준비물) 전체-->
+        
+        <div class="stepArea"> <!--스텝 영역-->
+            
+            <ul class="middleStepUl">
+                <div class="middleUlName">
+                    <span>스텝요약</span>
+                    <img id="stepBtn" class="middleArrow" src="./img/keyboard_arrow_up-24px.svg" alt="dropdown">
+                </div>
+
+                <div id="stepToggle">
+                    <li class="middleStepLi">
+                        <div class="middleStepNum">STEP 1/5</div>
+                        <div class="middleStepName">스트레칭</div>
+                        <div class="middleStepTimer">
+                            <img src="./img/access_time-24px.svg" alt="timer_icon">
+                            <span>00:05:30</span>
+                        </div>
+                    </li>
+
+                    <li class="middleStepLi">
+                        <div class="middleStepNum">STEP 2/5</div>
+                        <div class="middleStepName">스쿼트</div>
+                        <div class="middleStepTimer">
+                            <img src="./img/access_time-24px.svg" alt="timer_icon">
+                            <span>00:05:30</span>
+                        </div>
+                    </li>
+
+                    <li class="middleStepLi">
+                        <div class="middleStepNum">STEP 3/5</div>
+                        <div class="middleStepName">레그프레스</div>
+                        <div class="middleStepTimer">
+                            <img src="./img/access_time-24px.svg" alt="timer_icon">
+                            <span>00:05:30</span>
+                        </div>
+                    </li>
+                    <li class="middleStepLi">
+                        <div class="middleStepNum">STEP 4/5</div>
+                        <div class="middleStepName">랫풀다운</div>
+                        <div class="middleStepTimer">
+                            <img src="./img/access_time-24px.svg" alt="timer_icon">
+                            <span>00:05:30</span>
+                        </div>
+                    </li>
+                    <li class="middleStepLi">
+                        <div class="middleStepNum">STEP 5/5</div>
+                        <div class="middleStepName">플랭크</div>
+                        <div class="middleStepTimer">
+                            <img src="./img/access_time-24px.svg" alt="timer_icon">
+                            <span>00:05:30</span>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="materialArea"> <!--준비물 영역. 접혀있는게 디폴트값-->
+            <ul class="middleMatUl">
+                <div class="middleUlName">
+                    <span>준비물</span>
+                    <img id="materialBtn" class="middleArrow" src="./img/keyboard_arrow_down-24px.svg" alt="dropdown">
+                </div class="middleUlName">
+
+                <div id="materialToggle" class="materialToggleCss">
+                    <li class="middleMatLi"><a href="#">• 예쁜 마음씨</a></li>
+                    <li class="middleMatLi"><a href="#">• 잘생긴 얼굴</a></li>
+                    <li class="middleMatLi"><a href="#">• 넓은 어깨</a></li>
+                    <li class="middleMatLi"><a href="#">• 큰 키</a></li>
+                    <li class="middleMatLi"><a href="#">• 풍성한 머리숱</a></li>
+                    <li class="middleMatLi"><a href="#">• 운동화</a></li>
+                    <li class="middleMatLi"><a href="#">• 운동복</a></li>
+                    <li class="middleMatLi"><a href="#">• 요가매트</a></li>
+                    <li class="middleMatLi"><a href="#">• 넓은 공간</a></li>
+                    <li class="middleMatLi"><a href="#">• 맑은 공기</a></li>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="btnArea"> <!--버튼 영역-->
+        <div class="btnStart">시작합니다</div>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="path/to/sweetdropdown/dist/min/jquery.sweet-dropdown.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+    let stepCount = 1;
+    let materialCount = 1;
+
+    $("#stepBtn").click(function(){ //스텝요약 여닫기, 화살표 이미지 변경
+        $("#stepToggle").toggle();
+        
+        if(stepCount % 2 === 1){
+            $("#stepBtn").attr("src", "./img/keyboard_arrow_down-24px.svg");
+        }else{
+            $("#stepBtn").attr("src", "./img/keyboard_arrow_up-24px.svg");
+        }
+        stepCount++;
+    })
+
+    $("#materialBtn").click(function(){ //준비물 여닫기, 화살표 이미지 변경
+        $("#materialToggle").toggle();
+
+        if(materialCount % 2 === 1){
+            $("#materialBtn").attr("src", "./img/keyboard_arrow_up-24px.svg");
+        }else{
+            $("#materialBtn").attr("src", "./img/keyboard_arrow_down-24px.svg");
+        }
+        materialCount++;
+    })
+})
+</script>
+
+
+</html>
