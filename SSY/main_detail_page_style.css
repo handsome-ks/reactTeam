@@ -6,7 +6,7 @@ html, body{
     width: 100%;
     margin: 0;
     position: relative;
-
+    color: #181818;
     -webkit-text-size-adjust: none; 
     -moz-text-size-adjust: none; 
     -ms-text-size-adjust: none;
@@ -18,6 +18,7 @@ ul, li {
 }
 a {
     text-decoration: none;
+    color: #181818;
 }
 
 /*상단 바*/
@@ -26,7 +27,7 @@ a {
     height: 5%;
     position: fixed;
     top: 0;
-    background-color: ivory;
+    background-color: white;
     z-index: 3;
 }
 .topBack{ /*뒤로가기*/
@@ -37,7 +38,7 @@ a {
     left: 2%;
     position: absolute;
     line-height: 180%;
-    background-color: pink;
+    /* background-color: pink; */
     text-align: center;
 }
 .topText{ /*상단바 텍스트*/
@@ -48,27 +49,39 @@ a {
     left: 25%;
     right: 25%;
     position: absolute;
-    line-height: 180%;
-    background-color: powderblue;
+    line-height: 190%;
+    /* background-color: powderblue; */
     text-align: center;
 }
 
 /*대표 이미지 영역*/
 .repImg{
     width: 100%;
-    height: 26%;
+    /* height: 26%; */
+    height: auto;
     top: 5%;
     position: absolute;
-    background-color: gray;
+    background-color: black;
+    text-align: center;
+    z-index: 1;
+}
+.topImg{
+    width: 100%;
+    height: auto;
 }
 
 /*게시글 제목 영역*/
 .titleBar{
     width: 100%;
     height: 5%;
-    top: 31%;
+    top: 35%;
     position: absolute;
-    background-color: thistle;
+    background-color: #F5A623;
+    z-index: 3;
+}
+.titleFixed{ /*스크롤 내려도 타이틀바 고정*/
+    position: fixed;
+    top: 0;
 }
 .titleText{/*게시글 제목 텍스트 부분*/
     width: 70%;
@@ -78,10 +91,10 @@ a {
     left: 3%;
     right: 15%;
     position: absolute;
-    background-color: ivory;
+    /* background-color: ivory; */
     text-align: left;
-    line-height: 150%;
-    font-size: 20px;
+    line-height: 180%;
+    font-size: 18px;
 }
 .favoriteIcon{/*좋아요 아이콘*/
     position: absolute;
@@ -107,25 +120,27 @@ a {
 .middleArea{
     width: 100%;
     height: auto;
-    top: 36%;
+    top: 40%;
     position: absolute;
-    background-color: lightskyblue;
+    background-color: white;
+    z-index: 2;
 }
 .stepArea{/*스텝부분*/
     width: 100%;
     height: auto;
-    background-color: lightcoral;
+    background-color: white;
 }
 .middleStepUl, .middleMatUl{/*스텝과 준비물 ul*/
-    font-size: 20px;
-    padding-bottom: 5%;
+    font-size: 18px;
     padding-top: 3%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 2%;
 }
 .middleUlName{
     margin-left: 3%;
+    margin-right: 3%;
     margin-bottom: 4%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #D5D7D8;
 }
 .middleArrow{ /*스텝과 준비물 여닫는 화살표*/
     position: absolute;
@@ -137,16 +152,16 @@ a {
     width: 100%;
     padding-top: 2%;
     padding-bottom: 2%;
-    font-size: 18px;
+    font-size: 16px;
 }
 .middleStepNum{ /* STEP N/N 부분*/
-    margin-left: 3%;
-}
-.middleStepName{ /* 스텝 소제목 부분*/
     margin-left: 5%;
 }
+.middleStepName{ /* 스텝 소제목 부분*/
+    margin-left: 4%;
+}
 .middleStepTimer{ /* 스텝별 타이머 부분*/
-    right: 3%;
+    right: 4%;
     position: absolute;
 }
 .middleStepTimer img{
@@ -156,17 +171,23 @@ a {
 .materialArea{/*준비물부분*/
     width: 100%;
     height: auto;
-    background-color: lightsalmon;
-    padding-bottom: 5%;
+    padding-bottom: 28%;
+    background-color: white;
+    /* border-top: 1px solid gray; */
 }
 .middleMatLi{/*준비물 li뭉치*/
     height: 5%;
     width: 90%;
     margin-left: 5%;
     padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 18px;
+    font-size: 16px;
 }
+.materialToggleCss{
+    display: none;
+}
+
+/*드롭다운 관련*/
+
 
 
 /*버튼 영역*/
@@ -175,7 +196,8 @@ a {
     height: 10%;
     bottom: 0;
     position: fixed;
-    background-color: plum;
+    background-color: white;
+    border-top: 1px solid #D5D7D8;
     z-index: 3;
 }
 .btnStart{/*시작버튼*/
@@ -186,7 +208,8 @@ a {
     left: 10%;
     right: 10%;
     position: absolute;
-    background-color: ivory;
+    background-color: #F5A623;
+    border-radius: 30px;
     text-align: center;
     line-height: 200%;
     font-size: 22px;
