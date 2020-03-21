@@ -20,8 +20,8 @@
         <img class="topImg" src="./img/training.jpg" alt="training_img">
     </div>
 
-    <div class="titleBar"> <!--게시글 제목 부분-->
-        <div class="titleText">운동을 요래요래 하세요</div>
+    <div id="titleBarId" class="titleBar"> <!--게시글 제목 부분-->
+        <div class="titleText">그뉵이 늘어나게 해드려요</div>
         <div class="favoriteIcon"> <!--좋아요-->
             <img src="./img/favorite_border-24px.svg" alt="favorite">
         </div>
@@ -114,6 +114,39 @@
                     <li class="middleMatLi"><a href="#">• 요가매트</a></li>
                     <li class="middleMatLi"><a href="#">• 넓은 공간</a></li>
                     <li class="middleMatLi"><a href="#">• 맑은 공기</a></li>
+
+                    <li class="middleMatLi"><a href="#">• 예쁜 마음씨</a></li>
+                    <li class="middleMatLi"><a href="#">• 잘생긴 얼굴</a></li>
+                    <li class="middleMatLi"><a href="#">• 넓은 어깨</a></li>
+                    <li class="middleMatLi"><a href="#">• 큰 키</a></li>
+                    <li class="middleMatLi"><a href="#">• 풍성한 머리숱</a></li>
+                    <li class="middleMatLi"><a href="#">• 운동화</a></li>
+                    <li class="middleMatLi"><a href="#">• 운동복</a></li>
+                    <li class="middleMatLi"><a href="#">• 요가매트</a></li>
+                    <li class="middleMatLi"><a href="#">• 넓은 공간</a></li>
+                    <li class="middleMatLi"><a href="#">• 맑은 공기</a></li>
+
+                    <li class="middleMatLi"><a href="#">• 예쁜 마음씨</a></li>
+                    <li class="middleMatLi"><a href="#">• 잘생긴 얼굴</a></li>
+                    <li class="middleMatLi"><a href="#">• 넓은 어깨</a></li>
+                    <li class="middleMatLi"><a href="#">• 큰 키</a></li>
+                    <li class="middleMatLi"><a href="#">• 풍성한 머리숱</a></li>
+                    <li class="middleMatLi"><a href="#">• 운동화</a></li>
+                    <li class="middleMatLi"><a href="#">• 운동복</a></li>
+                    <li class="middleMatLi"><a href="#">• 요가매트</a></li>
+                    <li class="middleMatLi"><a href="#">• 넓은 공간</a></li>
+                    <li class="middleMatLi"><a href="#">• 맑은 공기</a></li>
+
+                    <li class="middleMatLi"><a href="#">• 예쁜 마음씨</a></li>
+                    <li class="middleMatLi"><a href="#">• 잘생긴 얼굴</a></li>
+                    <li class="middleMatLi"><a href="#">• 넓은 어깨</a></li>
+                    <li class="middleMatLi"><a href="#">• 큰 키</a></li>
+                    <li class="middleMatLi"><a href="#">• 풍성한 머리숱</a></li>
+                    <li class="middleMatLi"><a href="#">• 운동화</a></li>
+                    <li class="middleMatLi"><a href="#">• 운동복</a></li>
+                    <li class="middleMatLi"><a href="#">• 요가매트</a></li>
+                    <li class="middleMatLi"><a href="#">• 넓은 공간</a></li>
+                    <li class="middleMatLi"><a href="#">• 맑은 공기</a></li>
                 </div>
             </ul>
         </div>
@@ -131,6 +164,17 @@
 <script>
 $(document).ready(function(){
 
+    let titleBarOffset = $("#titleBarId").offset();
+
+    $(window).scroll(function(){ //스크롤 내려도 상단바 고정
+        if($(document).scrollTop() > titleBarOffset.top){
+            $("#titleBarId").addClass('titleFixed');
+        }else{
+            $("#titleBarId").removeClass('titleFixed');
+        }
+    })
+
+    
     let stepCount = 1;
     let materialCount = 1;
 

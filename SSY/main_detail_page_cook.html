@@ -20,7 +20,7 @@
         <img class="topImg" src="./img/cook.jpeg" alt="cook_img">
     </div>
 
-    <div class="titleBar"> <!--게시글 제목 부분-->
+    <div id="titleBarId" class="titleBar"> <!--게시글 제목 부분-->
         <div class="titleText">밀푀유나베 사주세여</div>
         <div class="favoriteIcon"> <!--좋아요-->
             <img src="./img/favorite_border-24px.svg" alt="favorite">
@@ -114,6 +114,39 @@
                     <li class="middleMatLi"><a href="#">• 앵무새 5마리</a></li>
                     <li class="middleMatLi"><a href="#">• 모기눈깔 1000개</a></li>
                     <li class="middleMatLi"><a href="#">• 초콜릿 한박스</a></li>
+
+                    <li class="middleMatLi"><a href="#">• 호랑이 1마리</a></li>
+                    <li class="middleMatLi"><a href="#">• 얼룩말 3마리</a></li>
+                    <li class="middleMatLi"><a href="#">• 마법의소스 한큰술</a></li>
+                    <li class="middleMatLi"><a href="#">• 양탄자</a></li>
+                    <li class="middleMatLi"><a href="#">• 마녀의솥</a></li>
+                    <li class="middleMatLi"><a href="#">• 에탄올 100ml</a></li>
+                    <li class="middleMatLi"><a href="#">• 가죽신발 두켤레</a></li>
+                    <li class="middleMatLi"><a href="#">• 앵무새 5마리</a></li>
+                    <li class="middleMatLi"><a href="#">• 모기눈깔 1000개</a></li>
+                    <li class="middleMatLi"><a href="#">• 초콜릿 한박스</a></li>
+
+                    <li class="middleMatLi"><a href="#">• 호랑이 1마리</a></li>
+                    <li class="middleMatLi"><a href="#">• 얼룩말 3마리</a></li>
+                    <li class="middleMatLi"><a href="#">• 마법의소스 한큰술</a></li>
+                    <li class="middleMatLi"><a href="#">• 양탄자</a></li>
+                    <li class="middleMatLi"><a href="#">• 마녀의솥</a></li>
+                    <li class="middleMatLi"><a href="#">• 에탄올 100ml</a></li>
+                    <li class="middleMatLi"><a href="#">• 가죽신발 두켤레</a></li>
+                    <li class="middleMatLi"><a href="#">• 앵무새 5마리</a></li>
+                    <li class="middleMatLi"><a href="#">• 모기눈깔 1000개</a></li>
+                    <li class="middleMatLi"><a href="#">• 초콜릿 한박스</a></li>
+
+                    <li class="middleMatLi"><a href="#">• 호랑이 1마리</a></li>
+                    <li class="middleMatLi"><a href="#">• 얼룩말 3마리</a></li>
+                    <li class="middleMatLi"><a href="#">• 마법의소스 한큰술</a></li>
+                    <li class="middleMatLi"><a href="#">• 양탄자</a></li>
+                    <li class="middleMatLi"><a href="#">• 마녀의솥</a></li>
+                    <li class="middleMatLi"><a href="#">• 에탄올 100ml</a></li>
+                    <li class="middleMatLi"><a href="#">• 가죽신발 두켤레</a></li>
+                    <li class="middleMatLi"><a href="#">• 앵무새 5마리</a></li>
+                    <li class="middleMatLi"><a href="#">• 모기눈깔 1000개</a></li>
+                    <li class="middleMatLi"><a href="#">• 초콜릿 한박스</a></li>
                 </div>
             </ul>
         </div>
@@ -130,6 +163,17 @@
 
 <script>
 $(document).ready(function(){
+
+    let titleBarOffset = $("#titleBarId").offset();
+
+    $(window).scroll(function(){ //스크롤 내려도 상단바 고정
+        if($(document).scrollTop() > titleBarOffset.top){
+            $("#titleBarId").addClass('titleFixed');
+        }else{
+            $("#titleBarId").removeClass('titleFixed');
+        }
+    })
+
 
     let stepCount = 1;
     let materialCount = 1;

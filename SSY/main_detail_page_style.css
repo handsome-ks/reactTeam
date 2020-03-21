@@ -63,6 +63,7 @@ a {
     position: absolute;
     background-color: black;
     text-align: center;
+    z-index: 1;
 }
 .topImg{
     width: 100%;
@@ -76,6 +77,11 @@ a {
     top: 35%;
     position: absolute;
     background-color: #F5A623;
+    z-index: 3;
+}
+.titleFixed{ /*스크롤 내려도 타이틀바 고정*/
+    position: fixed;
+    top: 0;
 }
 .titleText{/*게시글 제목 텍스트 부분*/
     width: 70%;
@@ -117,6 +123,7 @@ a {
     top: 40%;
     position: absolute;
     background-color: white;
+    z-index: 2;
 }
 .stepArea{/*스텝부분*/
     width: 100%;
@@ -164,7 +171,7 @@ a {
 .materialArea{/*준비물부분*/
     width: 100%;
     height: auto;
-    padding-bottom: 100px;
+    padding-bottom: 28%;
     background-color: white;
     /* border-top: 1px solid gray; */
 }
