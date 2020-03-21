@@ -11,8 +11,6 @@ li {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    width: 100%;
 }
 
 html {
@@ -29,14 +27,12 @@ body {
 }
 
 /* // reset.css */
-
 body {
     background: #E5E5E5;
-}
-
-.wrap {
     width: 100%;
-    /* position: relative; */
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 /* header CSS */
@@ -46,7 +42,6 @@ body {
     height: 60px;
     background: white;
     position: fixed;
-    /* border: 1px solid red; */
 }
 
 .top-title {
@@ -56,23 +51,18 @@ body {
     line-height: 60px;
 }
 
-.top-icon1 {
+.arrow-icon {
     font-size: 20px;
     position: absolute;
-    top: 30%;
-    left: 5%;
+    top: 20px;
+    left: 30px;
 }
 
-.top-icon2{
+.x-icon {
     font-size: 20px;
     position: absolute;
-    top: 30%;
-   left:90%  
-}
-
-.top-text {
-    font-size: 30px;
-    text-align: center;
+    top: 20px;
+    right: 30px;
 }
 
 /* main CSS */
@@ -85,14 +75,13 @@ body {
 
 .mid-container {
     width: 100%;
-    background-color: #E5E5E5;
     height: 100%;
+    background-color: #E5E5E5;
     padding-top: 60px;
 }
 
 .mid-box {
     width: 90%;
-
     /* position: relative;
     top: 15px; */
 
@@ -117,8 +106,23 @@ body {
     color: black;
 }
 
+/* @@@@@@@@@@@@@@ */
 .mid-camera-box-container {
     display: flex;
+    width: 100%;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .mid-camera-box {
@@ -135,43 +139,53 @@ body {
     top: 20px;
 }
 
+/* 파일 필드 숨기기 */
+.filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 /* footer CSS */
 .bot {
     width: 90%;
-    position: fixed;
-    bottom: 10%;
-}
-
-.bot {
-    width: 100%;
     position: fixed;
     bottom: 20px;
     padding: 20px 25px 0 25px;
     text-align: center;
 }
 
-.back {
+.bot-back {
     width: 45%;
     height: 50px;
     float: left;
-    font-size: 25px;
+    background: #fece1a;
 }
 
-.step-plus {
+.bot-step-plus {
     width: 45%;
     height: 50px;
     float: right;
-    font-size: 25px;
+    background: #fece1a;
 }
 
 .get-out {
     width: 100%;
     height: 50px;
-    font-size: 25px;
-    margin: 20px 0;
+    margin: 10px 0;
+    background: #fece1a;
 }
 
-.html-back{
-    color: black; 
+a {
     text-decoration: none;
+    display: block;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    line-height: 50px;
 }

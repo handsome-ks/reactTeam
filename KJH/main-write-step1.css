@@ -27,6 +27,7 @@ body {
     padding: 0;
 }
 
+
 /* // reset.css */
 
 .top {
@@ -37,11 +38,11 @@ body {
     position: fixed;
 }
 
-.title {
+.top-title {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    line-height: 50px;
+    line-height: 60px;
 }
 
 .arrow-icon {
@@ -49,29 +50,15 @@ body {
     position: absolute;
     top: 20px;
     left: 30px;
+    /* border : 1px solid red; */
 }
 
-.x-icon{
+.x-icon {
     font-size: 20px;
     position: absolute;
-    top: 30%;
-   left:90%  
-}
-
-.top-bar1 {
-    background: lightcoral;
-    width: 50%;
-    height: 10px;
-    position: absolute;
-    right: 50%;
-}
-
-.top-bar2 {
-    background: lightpink;
-    width: 50%;
-    height: 10px;
-    position: absolute;
-    left: 50%;
+    top: 20px;
+    right: 30px;
+    /* border : 1px solid red; */
 }
 
 /* main */
@@ -112,6 +99,7 @@ body {
     font-size: 14px;
 }
 
+/* 이놈 */
 .camera-box {
     width: 50px;
     height: 50px;
@@ -123,15 +111,21 @@ body {
     line-height: 50px;
 }
 
+/* 파일 필드 숨기기 */
+.filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 .camera-box-container {
     margin: 10px auto;
     text-align: center;
-}
-
-
-.box-container {
-    width: 100%;
-    display: flex;
 }
 
 /* footer CSS */
@@ -143,21 +137,30 @@ body {
     text-align: center;
 }
 
+.box-container {
+    width: 100%;
+    display: flex;
+}
+
 .step-plus {
     width: 45%;
     height: 50px;
     float: left;
-    font-size: 25px;
+    background: #fece1a;
 }
 
 .complete {
     width: 45%;
     height: 50px;
     float: right;
-    font-size: 25px;
+    background: #fece1a;
 }
 
-/* .html-connect{
-    color: black; 
+a {
     text-decoration: none;
-} */
+    display: block;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+}
