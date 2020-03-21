@@ -1,0 +1,27 @@
+※관리자모드로 들어가기
+18.191.241.247/KSY/sasdfa
+ssh
+파일 수정하기
+파일 올리기
+
+에드
+커밋
+푸시
+
+1. cd로 git-folder-reactTeam 들어옴
+2. git add *
+	git add. (현재 바뀐부분)
+3. git commit -m "설띵"
+4. git push origin master
+
+git branch [kimjh]
+git checkout [kimjh]
+
+
+깃 브런치 공부, 클론이란?
+왜 뜨는지(새로 만드는지)
+
+릴리즈
+머지를 통한 동기화
+
+브런치 경로 자동 체크아웃 kimjh
