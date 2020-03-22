@@ -15,12 +15,10 @@
         <div>
             <h2 class="top-title">글쓰기</h2>
 
-            <!-- 뒤로가기 화살표 -->
             <a href="http://127.0.0.1:5500/main.html">
                 <i class="fa fa-arrow-left arrow-icon" aria-hidden="true"></i>
             </a>
 
-            <!-- 나가기 아이콘 -->
             <a href="" onclick="showPopup();">
                 <i class="fa fa-times x-icon" aria-hidden="true"></i>
             </a>
@@ -80,85 +78,86 @@
                     <input type="text" placeholder="이 레시피/운동을 간단하게 입력해주쎄요!!">
                 </div>
 
-                <div class="mid-box2">
-                    <h2 class="mid-subject">과정사진</h2>
 
-                    <div class="box-container">
+                <!-- section.picture -->
+                <section class="camera">
+                    <h2 class="camera-tit">과정사진</h2>
 
-                        <div class="camera-box-container">
-                            <div class="filebox">
-                                <label for="ex_file">
-                                    <div class="camera-box">
-                                        <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
-                                    </div>
-                                </label>
-                                <input type="file" id="ex_file">
-                            </div>
+                        <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
                         </div>
 
-                        <div class=camera-box-container>
-                            <div class="filebox">
-                                <label for="ex_file">
-                                    <div class="camera-box">
-                                        <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
-                                    </div>
-                                </label>
-                                <input type="file" id="ex_file">
-                            </div>
+                        <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
                         </div>
 
-                        <div class=camera-box-container>
-                            <div class="filebox">
-                                <label for="ex_file">
-                                    <div class="camera-box">
-                                        <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
-                                    </div>
-                                </label>
-                                <input type="file" id="ex_file">
-                            </div>
+                        <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
                         </div>
 
-                        <div class=camera-box-container>
-                            <div class="filebox">
-                                <label for="ex_file">
-                                    <div class="camera-box">
-                                        <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
-                                    </div>
-                                </label>
-                                <input type="file" id="ex_file">
-                            </div>
+                        <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
                         </div>
 
-                        <div class=camera-box-container>
-                            <div class="filebox">
-                                <label for="ex_file">
-                                    <div class="camera-box">
-                                        <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
-                                    </div>
-                                </label>
-                                <input type="file" id="ex_file">
-                            </div>
+                        <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
                         </div>
 
-                    </div>
-                    <br><br><br><br>
-                </div>
+                        <!-- <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
+                        </div> -->
+                </section>
+
+
             </div>
         </div>
     </main>
 
+    <br><br><br><br><br><br><br>
+
+    <!-- Footer -->
     <footer class="bot">
         <div class="step-plus"><a href="http://127.0.0.1:5500/main-write-step2.html">스텝추가</a></div>
-        <div class="complete"><a href="http://naver.com">완료</a></div>
+        <div class="complete"><a href="#">완료</a></div>
     </footer>
 
+    <!-- 팝업 js -->
     <script>
         function showPopup() {
             window.open("http://127.0.0.1:5500/popup.html", "우리사랑하지말아요",
                 "width=370, height=230, left=100px, top=100px");
         }
     </script>
-    
 </body>
 
 </html>

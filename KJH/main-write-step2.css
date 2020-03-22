@@ -8,6 +8,15 @@ li {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -35,8 +44,12 @@ body {
     padding: 0;
 }
 
+.wrap{
+    width: 100%;
+}
+
 /* header CSS */
-.top {
+header .top {
     z-index: 1;
     width: 100%;
     height: 60px;
@@ -44,100 +57,35 @@ body {
     position: fixed;
 }
 
-.top-title {
+header .top .title {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     line-height: 60px;
 }
 
-.arrow-icon {
+header .top a .arrow-icon {
     font-size: 20px;
     position: absolute;
     top: 20px;
     left: 30px;
 }
 
-.x-icon {
-    font-size: 20px;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-}
+header .top a .x-icon {font-size: 20px; position: absolute; top: 20px; right: 30px;}
 
-/* main CSS */
-.mid {
-    width: 100%;
-    height: 100%;
-    min-height: calc(100vh - 60px);
-    background: #E5E5E5;
-}
+/* section 공통 */
+section {width: 90%; margin: 0 auto; padding: 15px 0;}
+section input {width: 100%; height: 30px;}
+section .tit {font-size: 24px; font-weight: bold;}
 
-.mid-container {
-    width: 100%;
-    height: 100%;
-    background-color: #E5E5E5;
-    padding-top: 60px;
-}
+/* section.step */
+section.step {padding:90px 0 30px 0; width: 90%; margin: 0 auto;}
 
-.mid-box {
-    width: 90%;
-    /* position: relative;
-    top: 15px; */
-
-    margin: 10px auto;
-}
-
-.mid-subject {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 35px;
-}
-
-.mid-input {
-    width: 100%;
-    height: 35px;
-    position: relative;
-}
-
-.mid-step {
-    background: #E5E5E5;
-    border: none;
-    color: black;
-}
-
-/* @@@@@@@@@@@@@@ */
-.mid-camera-box-container {
-    display: flex;
-    width: 100%;
-    margin-right: 30px;
-    text-align: center;
-}
-
-.filebox input[type="file"] {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-.mid-camera-box {
-    width: 60px;
-    height: 60px;
-    border: 2px solid rgb(190, 188, 188);
-    position: relative;
-    margin: 0 auto;
-}
-
-.mid-camera {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-}
+/* section.camera */
+section.camera {width: 90%;}
+section.camera .camera-tit {font-size: 20px; font-weight: 600; margin-bottom: 10px;}
+section.camera .camera-box {width: 50px; height: 50px; border: 1px solid gray; text-align: center; float: left; margin-right: 8%}
+section.camera .filebox .camera-icon {line-height: 50px;}
 
 /* 파일 필드 숨기기 */
 .filebox input[type="file"] {
@@ -152,40 +100,10 @@ body {
 }
 
 /* footer CSS */
-.bot {
-    width: 90%;
-    position: fixed;
-    bottom: 20px;
-    padding: 20px 25px 0 25px;
-    text-align: center;
-}
 
-.bot-back {
-    width: 45%;
-    height: 50px;
-    float: left;
-    background: #fece1a;
-}
+footer{width: 90%;}
+footer .bot {width:90%; position: fixed; bottom: 20px; padding: 0 5%}
+footer .bot-back {width: 45%; height: 50px; float: left; background: #fece1a;}
+footer .bot-step-plus {width: 45%; height: 50px; float: right; background: #fece1a;}
+footer .get-out {width: 100%; height: 50px; margin: 10px 0; background: #fece1a;}
 
-.bot-step-plus {
-    width: 45%;
-    height: 50px;
-    float: right;
-    background: #fece1a;
-}
-
-.get-out {
-    width: 100%;
-    height: 50px;
-    margin: 10px 0;
-    background: #fece1a;
-}
-
-a {
-    text-decoration: none;
-    display: block;
-    font-size: 25px;
-    color: black;
-    text-align: center;
-    line-height: 50px;
-}
