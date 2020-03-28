@@ -2,8 +2,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-
-    <link rel="stylesheet" href="path/to/sweetdropdown/dist/min/jquery.sweet-dropdown.min.css" />
     <link rel="stylesheet" href="./main_detail_page_style.css">
     <title>Main Detail Page Cook</title>
 </head>
@@ -23,19 +21,17 @@
     <div id="titleBarId" class="titleBar"> <!--게시글 제목 부분-->
         <div class="titleText">밀푀유나베 사주세여</div>
         <div class="favoriteIcon"> <!--좋아요-->
-            <img src="./img/favorite_border-24px.svg" alt="favorite">
+            <img id="likeBtn" src="./img/favorite_border-24px.svg" alt="favorite">
         </div>
         <div class="bookmarkIcon"> <!--보관함에 넣기-->
-            <img src="./img/bookmark_border-24px.svg" alt="bookmark">
+            <img id="bookmarkBtn" src="./img/bookmark_border-24px.svg" alt="bookmark">
         </div>
-        <button class="moreIcon" data-dropdown="#dropdown-standard"> <!--더보기-->
+        <button id="moreBtn" class="moreIcon"> <!--더보기-->
             <img src="./img/more_vert-24px.svg" alt="more">
         </button>
-        <div class="dropdown-menu dropdown-anchor-top-right dropdown-has-anchor" id="dropdown-standard">
-            <ul>
-                <li><a href="#">수정하기</a></li>
-                <li><a href="#">공유하기</a></li>
-            </ul>
+        <div class="dropdownCss" id="dropdownId">
+            <div class="dropdownMenu"><a href="#">수정하기</a></div>
+            <div class="dropdownMenu"><a href="#">공유하기</a></div>
         </div>
     </div>
 
@@ -159,10 +155,40 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="path/to/sweetdropdown/dist/min/jquery.sweet-dropdown.min.js"></script>
+<!-- <script src="path/to/sweetdropdown/dist/min/jquery.sweet-dropdown.min.js"></script> -->
 
 <script>
 $(document).ready(function(){
+
+    let likeCount = 1;
+    let bookmarkCount = 1;
+
+    $("#likeBtn").click(function(){ //좋아요 버튼 눌렀을 때
+        if(likeCount % 2 === 0){
+            $("#likeBtn").attr("src", "./img/favorite_border-24px.svg");
+        }else{
+            $("#likeBtn").attr("src", "./img/favorite-24px.svg");
+        }
+        likeCount++
+    })
+
+    $("#bookmarkBtn").click(function(){ //북마크 버튼 눌렀을 때
+        if(bookmarkCount % 2 === 0){
+            $("#bookmarkBtn").attr("src", "./img/bookmark_border-24px.svg");
+        }else{
+            $("#bookmarkBtn").attr("src", "./img/bookmark-24px.svg");
+        }
+        bookmarkCount++
+    })
+
+    $("#moreBtn").click(function(){ //더보기 버튼 클릭했을 때
+        if($(".dropdownCss").css("display") === "none"){
+            $("#dropdownId").show();
+        } else {
+            $("#dropdownId").hide();
+        }
+    })
+
 
     let titleBarOffset = $("#titleBarId").offset();
 
