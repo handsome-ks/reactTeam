@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./main-write-step1.css">
+    <title>main-write-step1</title>
+</head>
+
+<body>
+
+    <!-- header 시작 -->
+    <header class="top">
+        <div>
+            <h2 class="top-title">글쓰기</h2>
+
+            <a href="main.html">
+                <i class="fa fa-arrow-left arrow-icon" aria-hidden="true"></i>
+            </a>
+
+            <a href="" onclick="showPopup();">
+                <i class="fa fa-times x-icon" aria-hidden="true"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- main 시작 -->
+    <main>
+        <div class="mid">
+            <div class="mid-container">
+
+                <div class="mid-box">
+                    <h2 class="mid-subject">글 제목</h2>
+                    <input type="text" placeholder="글 제목을 입력해주쎄요!!">
+                </div>
+
+                <div class="mid-box">
+                    <h2 class="mid-subject">요약</h2>
+                    <input type="text" placeholder="이 레시피/운동을 간단히 입력해주쎄요!!">
+                </div>
+
+                <div class="mid-box">
+                    <h2 class="mid-subject">해시태그</h2>
+                    <input type="text" placeholder="해시태그를 입력해주쎄요!!">
+                </div>
+
+                <div class="mid-box">
+                    <h2 class="mid-subject">준비물</h2>
+                    <input type="text" placeholder="이 레시피/운동에 필요한 준비물을 입력해주쎄요!!">
+                </div>
+
+                <div class="mid-box">
+                    <h2 class="mid-subject">대표사진</h2>
+
+                    <div class="camera-box-container">
+                        <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+
+                <div class="mid-box">
+                    <h2 class="mid-subject">STEP 제목</h2>
+                    <input type="text" placeholder="STEP 제목을 입력해주쎄요!!">
+                </div>
+
+                <div class="mid-box">
+                    <h2 class="mid-subject">내용</h2>
+                    <input type="text" placeholder="이 레시피/운동을 간단하게 입력해주쎄요!!">
+                </div>
+
+
+                <!-- section.picture -->
+                <section class="camera">
+                    <h2 class="camera-tit">과정사진</h2>
+
+                        <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
+                        </div>
+
+                        <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
+                        </div>
+
+                        <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
+                        </div>
+
+                        <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
+                        </div>
+
+                        <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
+                        </div>
+
+                        <!-- <div class="filebox">
+                            <label for="ex_file">
+                                <div class="camera-box">
+                                    <i class="fa fa-camera camera-icon" aria-hidden="true"></i>
+                                </div>
+                            </label>
+                            <input type="file" id="ex_file">
+                        </div> -->
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <br><br><br><br><br><br><br>
+
+    <!-- Footer -->
+    <footer class="bot">
+        <div class="step-plus"><a href="main-write-step2.html">스텝추가</a></div>
+        <div class="complete"><a href="#">완료</a></div>
+    </footer>
+
+    <!-- 팝업 js -->
+    <script>
+        function showPopup() {
+            window.open("http://127.0.0.1:5500/popup.html", "우리사랑하지말아요",
+                "width=370, height=230, left=100px, top=100px");
+        }
+    </script>
+</body>
+
+</html>

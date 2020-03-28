@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            line-height: 30px;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        /* .btn-box {
+            border: 1px solid red;
+        } */
+
+        .btn {
+            width: 60px;
+            height: 40px;
+            /* float: right; */
+            /* margin: 0 20px; */
+        }
+
+        .btn:hover {
+            background: lightgreen;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        글을 닫으시면 작성중인 내용은 저장이 안됩니다. <br>
+        나가시겠습니까?
+    </div>
+
+    <div class="btn-box">
+        <input class="btn" type="button" value="아니오" onclick="self.close();" />
+        <input class="btn" type="button" value="확인" onclick="moveClose();" />
+    </div>
+
+    <script language="javascript">
+        function moveClose() {
+            opener.location.href = "main.html";
+            self.close();
+        }
+    </script>
+
+</body>
+
+</html>
