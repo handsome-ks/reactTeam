@@ -102,7 +102,7 @@ a {
     top: 2%;
     float: left;
     margin: 4%;
-    position: absolute;
+    /* position: absolute; */
     background-color: linen;
 
     text-align: center;
