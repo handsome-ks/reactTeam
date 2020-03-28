@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="jquery.sweet-dropdown-1.0.0/min/jquery.sweet-dropdown.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <link rel="stylesheet" href="./mainSwipe-style.css">
+    <title>Timer</title>
+</head>
+<body>
+    <header class="header-content">
+        <!-- <div class="headbox">전체</div>
+        <div class="headbox">운동</div>
+        <div class="headbox">레시피</div> -->
+        <li class="headbox">전체</li>
+        <li class="headbox">운동</li>
+        <li class="headbox">레시피</li>
+        <li class="slider"></li>
+    </header>
+    <main class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="main container swiper-slide">
+                <div class="search">
+                    <img src="./img/search.png" alt="search"class="img-search">
+                    <input type="text" placeholder="검색어 입력">
+                    <button type="button" class="btn-search">검색</button>
+                </div>
+                <!--Contents-->
+                <div class="contents">
+                    <!--Box-->
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/exercise1.png" alt="exercise1" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                일두이두삼두빡운동
+                            </div>
+
+                            <div class="text-subtit">
+                                9분,6운동
+                            </div>
+                        
+                            <div class="text-tag">
+                                #운동초보 #워터파크준비
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/exercise2.png" alt="exercise2" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                유산소운동
+                            </div>
+
+                            <div class="text-subtit">
+                                30분, 12운동
+                            </div>
+                        
+                            <div class="text-tag">
+                                #운동초보 #워터파크준비
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/recipe1.png" alt="recipe1" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                화채만들기
+                            </div>
+
+                            <div class="text-subtit">
+                                20분,12단계
+                            </div>
+                        
+                            <div class="text-tag">
+                                #요리초보 #여름 음식
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/recipe2.png" alt="recipe2" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                커피콩볶기
+                            </div>
+
+                            <div class="text-subtit">
+                                4시간,20단계
+                            </div>
+                        
+                            <div class="text-tag">
+                                #커피 #요리초보
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/recipe3.png" alt="recipe3" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                돼지감자 샐러드
+                            </div>
+
+                            <div class="text-subtit">
+                            15분,5단계
+                            </div>
+                        
+                            <div class="text-tag">
+                            #샐러드 #요린이
+                            </div>
+                        </div>  
+                    </div>
+                </div> <!--//Contents-->
+            </div>
+            <!--CONTENTS2-->
+            <div class="main container swiper-slide">
+                <div class="search">
+                    <img src="./img/search.png" alt="search"class="img-search">
+                    <input type="text" placeholder="검색어 입력">
+                    <button type="button" class="btn-search">검색</button>
+                </div>
+                <!--Contents-->
+                <div class="contents">
+                    <!--Box-->
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/exercise1.png" alt="exercise1" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                일두이두삼두빡운동
+                            </div>
+
+                            <div class="text-subtit">
+                                9분,6운동
+                            </div>
+                        
+                            <div class="text-tag">
+                                #운동초보 #워터파크준비
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/exercise2.png" alt="exercise2" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                유산소운동
+                            </div>
+
+                            <div class="text-subtit">
+                                30분, 12운동
+                            </div>
+                        
+                            <div class="text-tag">
+                                #운동초보 #워터파크준비
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/recipe1.png" alt="recipe1" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                화채만들기
+                            </div>
+
+                            <div class="text-subtit">
+                                20분,12단계
+                            </div>
+                        
+                            <div class="text-tag">
+                                #요리초보 #여름 음식
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/recipe2.png" alt="recipe2" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                커피콩볶기
+                            </div>
+
+                            <div class="text-subtit">
+                                4시간,20단계
+                            </div>
+                        
+                            <div class="text-tag">
+                                #커피 #요리초보
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/recipe3.png" alt="recipe3" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                돼지감자 샐러드
+                            </div>
+
+                            <div class="text-subtit">
+                            15분,5단계
+                            </div>
+                        
+                            <div class="text-tag">
+                            #샐러드 #요린이
+                            </div>
+                        </div>  
+                    </div>
+                </div> <!--//Contents-->
+                
+            </div>
+            <!--CONTENTS3-->
+            <div class="main container swiper-slide">
+                <div class="search">
+                    <img src="./img/search.png" alt="search"class="img-search">
+                    <input type="text" placeholder="검색어 입력">
+                    <button type="button" class="btn-search">검색</button>
+                </div>
+                <!--Contents-->
+                <div class="contents">
+                    <!--Box-->
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/exercise1.png" alt="exercise1" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                일두이두삼두빡운동
+                            </div>
+
+                            <div class="text-subtit">
+                                9분,6운동
+                            </div>
+                        
+                            <div class="text-tag">
+                                #운동초보 #워터파크준비
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/exercise2.png" alt="exercise2" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                유산소운동
+                            </div>
+
+                            <div class="text-subtit">
+                                30분, 12운동
+                            </div>
+                        
+                            <div class="text-tag">
+                                #운동초보 #워터파크준비
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/recipe1.png" alt="recipe1" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                화채만들기
+                            </div>
+
+                            <div class="text-subtit">
+                                20분,12단계
+                            </div>
+                        
+                            <div class="text-tag">
+                                #요리초보 #여름 음식
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/recipe2.png" alt="recipe2" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                커피콩볶기
+                            </div>
+
+                            <div class="text-subtit">
+                                4시간,20단계
+                            </div>
+                        
+                            <div class="text-tag">
+                                #커피 #요리초보
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box">
+                        <div class="right box">
+                            <img src="./img/recipe3.png" alt="recipe3" class="img-box">
+                        </div>  
+
+                        <div class="text">
+                            <div class="text-tit">
+                                돼지감자 샐러드
+                            </div>
+
+                            <div class="text-subtit">
+                            15분,5단계
+                            </div>
+                        
+                            <div class="text-tag">
+                            #샐러드 #요린이
+                            </div>
+                        </div>  
+                    </div>
+                </div> <!--//Contents-->
+                
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footbox">
+            <div class="icon">
+                <button type="button" class="foot_btn" id="btn1"></button>
+            </div>
+            <div class="icon-text">메인</div>
+        </div>
+        <div class="footbox">
+            <div class="icon">
+                <button type="button" class="foot_btn" id="btn2"></button>
+            </div>
+            <div class="icon-text" >타이머</div>
+        </div>
+        <div class="footbox">
+            <div class="icon">
+                <button type="button" class="foot_btn" id="btn3"></button>
+            </div>
+            <div class="icon-text">글쓰기</div>
+        </div>
+        <div class="footbox">
+            <div class="icon">
+                <button type="button" class="foot_btn" id="btn4"></button>
+            </div>
+            <div class="icon-text" >보관함</div>
+        </div>
+        <div class="footbox">
+            <div class="icon">
+                <button type="button" class="foot_btn" id="btn5"></button>
+            </div>
+            <div class="icon-text">내정보</div>
+        </div>
+    </footer>
+</body>
+<script src = "jquery.sweet-dropdown-1.0.0/min/jquery.sweet-dropdown.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script> 
+<script>
+    $("ul li").click(function(e) {
+        if ($(this).hasClass('slider')) {
+            return;
+        }
+
+        var whatTab = $(this).index();
+
+        var howFar = 160 * whatTab;
+
+        $(".slider").css({
+            left: howFar + "px"
+        });
+
+        $(".ripple").remove();
+
+        var posX = $(this).offset().left,
+        posY = $(this).offset().top,
+        buttonWidth = $(this).width(),
+        buttonHeight = $(this).height();
+
+        $(this).prepend("<span class='ripple'></span>");
+
+        if (buttonWidth >= buttonHeight) {
+            buttonHeight = buttonWidth;
+        }else{
+            buttonWidth = buttonHeight;
+        }
+
+        var x = e.pageX - posX - buttonWidth / 2;
+        var y = e.pageY - posY - buttonHeight / 2;
+
+        $(".ripple").css({
+            width: buttonWidth,
+            height: buttonHeight,
+            top: y + 'px',
+            left: x + 'px'
+        }).addClass("rippleEffect");
+
+    });
+
+    let btn = $(".foot_btn");
+
+    const btnArr = [$("#btn1"),$("#btn2"),$("#btn3"),$("#btn4"),$("#btn5")];
+
+    const titleArr = ["전체","요리","운동"];
+
+    let pageCount = -1;
+
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+        el: '.header-content',
+        clickable: true,
+        renderBullet: function (index, className) {
+        pageCount++;
+        return '<li class="headbox '+className+'">'+titleArr[pageCount]+'</li>';
+        //'<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+        progress: function(){
+        $(".headbox").css("border-bottom","8px solid #ffffff");
+        }
+    },
+    });
+
+    // // btnArr[0].select(#)
+    // btn.on("click",function(){
+    //     if(btn.index == btnArr[1]){
+    //         btn.css("background-color","#F5A623");
+    //     }
+
+    // });
+    // btnArr[0].select(#)
+    //   btn.on("click",function(btnArr){
+    //     btnArr[0].select(btn.css("background-color","#F5A623"));
+
+    // });
+    btn.on("click",function(index){
+    // if(btn===btnArr){
+    //     btnArr[0].css("background-color","#F5A623");
+    // }
+    var i = $(btn).index();
+    console.log(i);
+
+    });
+
+    let disableTabBtColor = "#909192";
+    let ableTabBtColor = "#F5A623";
+
+    // btnArr[0].select(#)
+    let count = 0;
+
+    let clickBtFn = function(e){//전부 회색으로 바꿔준다
+    for(let bt of btnArr){
+    bt.css("background-color",disableTabBtColor);//전부 회색으로 바꿔준다
+    }
+    let clickBt = $("#"+e.target.id);
+    clickBt.css("background-color",ableTabBtColor); //클릭한거만 색을 다시 칠해준다
+    }
+
+    for(let bt of btnArr){ //하단버튼에 전부 클릭리스너
+    bt.on("click",clickBtFn);
+    }
+
+</script>
+</html> 

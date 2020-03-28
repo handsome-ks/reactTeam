@@ -42,15 +42,6 @@ body {
     /* overflow-x: hidden; */
 }
 
-.swiper-container{
-
-}
-
-.swiper-wrapper{
-
-}
-
-.swiepr-slide{}
 
 /* p {
     font-weight: 400;
@@ -80,15 +71,90 @@ h3 {
     color:#ffffff;
     text-align: center;
     z-index: 30;
+    
 }
 
 .headbox{
     background-color: #F5A623;
     flex: 1;
     line-height: 70px;
+    z-index: 20;
+    /* border-bottom: 8px solid #ffffff; */
     /* border: 1px solid #ff6600; */
 }
 
+.swiper-pagination-bullet{
+    border-radius : 0%;
+    height: 100%;
+    opacity: 100;
+}
+
+ul {
+    position: relative;
+    padding: 0;
+    width: 480px;
+    margin: 40px auto;
+    user-select: none;
+  }
+  
+  li {
+    display: inline-block;
+    width: 160px;
+    height: 60px;
+    background: #E95546;
+    font-size: 25px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .slider {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background: #4FC2E5;
+    transition: all 0.5s;
+    z-index: 30;
+  }
+
+  .ripple {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    position: absolute;
+    opacity: 1;
+  }
+  
+  .rippleEffect {
+    -webkit-animation: rippleDrop .6s linear;
+    animation: rippleDrop .6s linear;
+  }
+  
+  @-webkit-keyframes 
+    rippleDrop {  100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+        }
+    }
+  
+  @keyframes 
+    rippleDrop {  100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+        }
+    }
 /* // header */
 
 /* main */
@@ -99,6 +165,7 @@ h3 {
      /* calc 는 +, -, *, / 모두 사용 가능. */
     min-height: calc(100vh - 50px);
     background:#E5E5E5;
+    z-index: 15;
 }
 /* .list{
     padding-top: 70px;
@@ -167,7 +234,7 @@ h3 {
 .img-box{
     width: 85px;
     float: right;
-    margin-top: 5px;
+    margin-top: 5px; 
     margin-right: 10px;
 }
 .contents-img{
@@ -253,7 +320,7 @@ h3 {
 }
 /* .contents{
     width: 100%;
-    height: 100%;
+    height: 100%;tjdus
 }
 .box{
     border: 1px solid darkgreen;
@@ -271,6 +338,7 @@ h3 {
     position:fixed;
     font-size:1em;
     background-color:#FFFFFF;
+    z-index: 10;
     bottom: 0;  
 }
 .footbox{
@@ -295,4 +363,4 @@ h3 {
     margin-top: 6px;
     color: #909192;
 }
-/*// footer*/
+/* // footer */
